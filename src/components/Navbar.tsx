@@ -23,12 +23,9 @@ const Navbar = ({back}: {back: string[]}) => {
                   <i className="bx bx-arrow-back" />
                 </Link>
               )}
-              <div className='flex items-center justify-center'>
-                <SignedIn >
-                  <UserButton />
-                </SignedIn>
-              </div>
-              
+              <SignedIn >
+                <UserButton />
+              </SignedIn>
               <SignedOut>
                 <Link  href={'/sign-in'} className='text-slate-50 cursor-pointer  max-xs:text-xs hover:bg-blue-500 rounded-md p-2 hover:text-slate-50 font-semibold'>Login</Link>
                 <Link href={'/sign-up'} className='text-slate-50 cursor-pointer  max-xs:text-xs hover:bg-blue-500 rounded-md p-2 hover:text-slate-50 whitespace-nowrap font-semibold'>Sign Up</Link>
